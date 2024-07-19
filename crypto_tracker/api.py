@@ -9,10 +9,11 @@ def Binance(coin):
 
 
 def Bybit(coin):
-    url = f"https://api.bybit.com/v2/public/tickers?symbol={coin.upper()}USD"
+    url = f"https://api.bybit.com/v5/market/tickers?category=spot&symbol={coin.upper()}USDT"
     response = requests.get(url)
     data = response.json()
-    return float(data['results'][0]['last_price'])
+    price = float(data['result']['list'][0]['lastPrice'])
+    return price
 
 
 def Bitfinex(coin):
